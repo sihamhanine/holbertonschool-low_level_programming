@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+* main - Print This program will assign a random number to the variable.
+* Return: 0 no error.
+*/
+
 int main(void)
 {
 int n;
@@ -19,6 +22,8 @@ if (n < 0)
 printf("%d is negative\n", n);
 return (0);
 }
+
+
 
 
 
