@@ -3,11 +3,10 @@
 #include <time.h>
 
 /**
-* main -Print the program will assigned a random number to the variable n
+*main -Print the program will assigned a random number to the variable n
 *
-* Return : 0 NOT NULL.
+* Return: 0 NOT NULL.
 */
-
 int main(void)
 {
 int n, last;
@@ -24,6 +23,7 @@ if (last < 6 && last != 0)
 printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
 return (0);
 }
+
 
 
 
