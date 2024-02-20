@@ -13,16 +13,17 @@ int main(void)
 
 if(n>5)
 
-  printf("Last digit of %d is %d and is greater than 5 \n", n, r);
+  printf("Last digit of %d is %d and is greater than 5\n", n, r);
 
 else 
 
   if (n==0)
-printf("Last digit of %d is %d and is 0 \n", n,r);
+printf("Last digit of %d is %d and is 0\n", n,r);
 else 
 if (n<6)
-printf("Last digit od %d is %d ans is less than 6 and 0 \n", n,r);
+printf("Last digit od %d is %d ans is less than 6 and 0\n", n,r);
 
 return (0);
 
 }
+
