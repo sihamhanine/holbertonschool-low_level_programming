@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -Paint "Write a program that prints the alphabet 
+ * main -Paint "Write a program that prints the alphabet
  * in lowercase, followed by a new line."
  *
  * Return: 0 NOT NULL.
@@ -19,6 +19,7 @@ putchar(c);
 putchar('\n');
 return (0);
 }
+
 
 
 
