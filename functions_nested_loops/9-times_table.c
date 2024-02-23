@@ -20,8 +20,8 @@ p = n % 10;
 x = (n - p) / 10;
 _putchar(',');
 _putchar(' ');
-_putchar(p + '0');
 _putchar(x + '0');
+_putchar(p + '0');
 }
 else
 {
@@ -37,4 +37,5 @@ _putchar(n + '0');
 _putchar('\n');
 }
 }
+
 
