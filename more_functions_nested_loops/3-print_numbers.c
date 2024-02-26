@@ -7,7 +7,7 @@
  *
  * Return: le nombre de 0 a 9.
  */
-Void print_numbers(void)
+void print_numbers(void)
 {
 int i;
 for (i = 0 ; i < 10 ; i++)
