@@ -1,24 +1,30 @@
 #include "main.h"
 
 /**
- * print_line - Function that draws a straight
+ * print_diagonal - Function that draws a diagonal
  * line in the terminal.
  *
  *@n: le nombre a verifier.
  *
  * Return: If n is 0 or less, print \n
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 
-int i;
+  int i , j;
 
 for (i = 0 ; i < n ; i++)
 {
-if (n > 0)
+  for (j = 0 ; j < i ; j++)
+    
 {
-_putchar('_');
-}
+  _putchar(' ');
+ }
+  
+_putchar('\\');
+
+ _putchar('\n');
+
 if (n <= 0)
 {
 _putchar('\n');
@@ -28,3 +34,5 @@ _putchar('\n');
 }
 _putchar('\n');
 }
+
+
