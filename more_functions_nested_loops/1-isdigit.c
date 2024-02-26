@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isdigi - Function that checks for a digit (0 through 9).
+ * _isdigit - Function that checks for a digit (0 through 9).
  *
  * @c: le nombre a verifier.
  *
@@ -15,4 +15,3 @@ return (1);
 else
 return (0);
 }
-
