@@ -3,11 +3,11 @@
 /**
  * print_square - Function that prints a square,
  * followed by a new line.
- * 
+ *
  *
  *@size: le nombre a verifier.
  *
- * Return: If n is 0 or less, print \n
+ * Return: If size is 0 or less, print \n
  */
 void print_square(int size)
 {
@@ -24,7 +24,5 @@ for (j = 0 ; j < size ; j++)
   _putchar('#');
 }
 _putchar('\n');
-
-
 }
 }
