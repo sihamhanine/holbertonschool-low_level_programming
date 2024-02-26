@@ -3,7 +3,7 @@
 /**
  * _isdigi - Function that checks for a digit (0 through 9).
  *
- * @c: le caractere a verifier.
+ * @c: le nombre a verifier.
  *
  * Return: 1 if c is a digit and 0 otherwise.
  */
