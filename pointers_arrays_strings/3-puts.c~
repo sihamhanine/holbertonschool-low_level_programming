@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+ * _puts - Function that prints a string,
+ * followed by a new line, to stdout.
+ *
+ *
+ * @str: le caractere a verifier.
+ *
+ * Return: NOT NULL.
+ */
+
+void _puts(char *str)
+{
+  int l = 0;
+  while (str[l] != '\0')
+    {
+  _putchar(*str);
+  str++;
+    }
+}
