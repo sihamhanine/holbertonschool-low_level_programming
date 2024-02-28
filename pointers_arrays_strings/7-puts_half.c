@@ -26,10 +26,9 @@ else
 {
 j = i / 2;
 }
- for (; j < i ; j++)
-   {
-     _putchar(str[j]);
-   }
- 
+for (; j < i ; j++)
+{
+_putchar(str[j]);
+}
 _putchar('\n');
 }
