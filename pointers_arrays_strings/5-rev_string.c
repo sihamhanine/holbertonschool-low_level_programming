@@ -1,21 +1,8 @@
 #include "main.h"
 
-#include <unistd.h>
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 /**
  * rev_string - Function that reverses a string.
- * 
+ *
  *
  * @s: caractere a verifier
  *
@@ -24,7 +11,18 @@ int _putchar(char c)
 
 void rev_string(char *s)
 {
-  int i = 0;
-  for (i = s[i] - 1 ; i >= 0 ; i--)
-    _putchar(s[i]);
-    }
+int i = 0;
+int l = 0;
+int temp;
+
+while (s[l] !='\0')
+{
+l++;
+}
+for (l = l - 1 ; l >= 0 && i < l ; l-- , i++)
+{
+temp = s[l];
+s[l] = s[i];
+s[i] = temp;
+}
+}
