@@ -6,6 +6,7 @@
  *
  * @dest: chaine a verifier
  * @src: chaine a verifier
+ * @n: le nombre a verifier
  *
  * Return: une caractere
  */
