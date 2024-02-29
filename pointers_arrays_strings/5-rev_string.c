@@ -19,7 +19,7 @@ while (s[l] !='\0')
 {
 l++;
 }
-for (l = l - 1 ; l >= 0 && i < l ; l-- , i++)
+for (l = l - 1 ; l >= 0 && i < l ; l--, i++)
 {
 temp = s[l];
 s[l] = s[i];
