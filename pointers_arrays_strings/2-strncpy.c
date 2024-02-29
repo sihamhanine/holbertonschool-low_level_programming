@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 2-strncpy.c - Function Write a function that copies a string.
+ * *_strncpy - Function Write a function that copies a string.
  *
  *
  * @dest: le caractere a verifier
