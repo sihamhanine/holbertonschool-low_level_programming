@@ -15,7 +15,7 @@ int i = 0;
 int l = 0;
 int temp;
 
-while (s[l] !='\0')
+while (s[l] != '\0')
 {
 l++;
 }
