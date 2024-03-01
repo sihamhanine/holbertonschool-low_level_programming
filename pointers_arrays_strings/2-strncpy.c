@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
   while (src[i++])
     len_src++;
   
-for (i = 0 ; i < n && src[i] != '\0' ; i++)
+for (i = 0 ; src[i] && i < n ; i++)
 dest[i] = src[i];
  for (i = len_src ; i < n ; i++)
 {
