@@ -14,23 +14,29 @@ int _atoi(char *s)
   int signe = 1;
   int result = 0;
   int i = 0;
-  if (s[0] == '-')
+  int c = 0;
+
+  
+  if (s[0] == 45)
     {
-      signe = -1;
-      i++;
+      signe *= -1;
     }
-  if (s[0] == '+')
-    {
-      i++;
-    }
+  
   while (s[i] != '\0')
     {
-	if (s[i] >= '0' && s[i] <= '9')
+	while (s[i] >= '0' && s[i] <= '9')
 	{
-	  result = result * 10 + (s[i] - '0');
+	  c = 1;
+	  result = (result * 10) + (s[i] - '0');
+	  i++;
 	}
+	if ( c == 1)
+	  {
+	    break;
+	  }
       i++;
     }
+    
   result = result * signe;
   return (result);
 }
