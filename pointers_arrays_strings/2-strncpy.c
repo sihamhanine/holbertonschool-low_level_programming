@@ -24,7 +24,6 @@ dest[i] = src[i];
  for (i = len_src ; i < n ; i++)
 {
 dest[i] = '\0';
-i++;
 }
 return (dest);
 }
