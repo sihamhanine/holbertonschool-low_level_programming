@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main finds and prints the largest prime factor
- * of the number 612852475143, followed by a new line.
+ * main - prints the largest prime factor
+ * of the number 612852475143.
  *
  *
- * Return: 0 NOT NULL.
+ * Return: (0).
  */
 
 int main(void)
