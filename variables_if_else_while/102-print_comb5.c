@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints all possible different
- * combinations of three digits.
+ * combinations of tow tow digit
  *
  *
  * Return: 0 NOT NULL
@@ -25,7 +25,7 @@ if (((j != i) != z) != d)
 putchar(i);
 putchar(j);
 putchar(z);
- putchar(d);
+putchar(d);
 if (i == '6' && j == '7')
 continue;
 putchar(',');
@@ -38,4 +38,3 @@ putchar(' ');
 putchar('\n');
 return (0);
 }
-
