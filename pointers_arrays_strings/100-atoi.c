@@ -22,7 +22,7 @@ signe *= -1;
 i++;
 }
 j = i;
-while ((s[j] >= '0' ) && (s[j] <= '9'))
+while ((s[j] >= '0') && (s[j] <= '9'))
 {
 result = (result * 10) + signe * (s[j] - '0');
 j++;
