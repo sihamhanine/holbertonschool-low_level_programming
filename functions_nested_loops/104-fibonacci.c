@@ -10,9 +10,9 @@
 
 int main(void)
 {
-int i = 0;
+int i, c;
 long j = 1, k = 2;
-while (i < 98)
+for (i = 0; i < 98 ; i++)
 {
 if (i == 0)
 {
@@ -25,11 +25,11 @@ printf(", %ld", k);
 }
 else
 {
-k = k + j;
-j = k - j;
+  c = j + k;
+  j = k;
+  k = c;
 printf(", %ld", k);
 }
-++i;
 }
 printf("\n");
 return (0);
