@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -  prints all possible different
+ * main - prints all possible different
  * combinations of three digits.
  *
  *
@@ -16,7 +16,7 @@ for (i = '0'; i <= '9'; i++)
 for (j = i + 1; j <= '9'; j++)
 {
 for (z = j + 1; z <= '9'; z++)
-{      
+{
 if ((j != i) != z)
 {
 putchar(i);
