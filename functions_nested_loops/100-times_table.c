@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h> 
+
 /**
  * print_times_table - that prints the n times table,
  * starting with 0.
@@ -7,7 +7,6 @@
  * @n: le nombre a verifier
  * Return: 0 NOT NULL
  */
-
 void print_times_table(int n)
 {
 int i, j, k;
