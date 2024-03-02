@@ -8,12 +8,11 @@
  */
 int main(void)
 {
-int i = '0';
+int i;
 int j;
-while (i <= '9')
+for (i = '0'; i <= '9'; i++)
 {
-j = '0';
-while (j <= '9')
+for (j = '0'; j <= '9'; j++)
 {
 if (i < j)
 {
@@ -23,9 +22,7 @@ if (i != '8' || (i == '8' && j != '9'))
 putchar(',');
 putchar(' ');
 }
-j++;
 }
-i++;
 }
 putchar('\n');
 return (0);
