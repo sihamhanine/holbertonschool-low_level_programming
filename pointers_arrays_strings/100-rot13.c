@@ -21,6 +21,7 @@ for (j = 0 ; j < 52 ; j++)
 if (s[i] == s1[j])
 {
 s[i] = s2[j];
+break;
 }
 }
 }
