@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main  prints a[2] = 98, followed by a new line.
+ * main  prints a[2] = 98
+ * followed by a new line.
  *
  *
  * Return: 0 NOT NULL.
