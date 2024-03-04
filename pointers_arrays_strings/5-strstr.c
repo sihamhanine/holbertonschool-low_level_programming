@@ -23,5 +23,5 @@ break;
 }
 }
 }
-return NULL;
+ return (haystack);
 }
