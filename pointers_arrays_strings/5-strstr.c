@@ -23,5 +23,5 @@ break;
 }
 }
 }
-return (haystack);
+return (needle);
 }
