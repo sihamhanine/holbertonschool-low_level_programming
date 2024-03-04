@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * *_strstr - Function that locates a substring.
  *
@@ -23,5 +23,5 @@ break;
 }
 }
 }
-return (haystack);
+return NULL;
 }
