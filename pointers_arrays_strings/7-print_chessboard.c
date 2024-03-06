@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * print_chessboard - Function that prints the chessboard.
+ * print_chessboard - Function that
+ * prints the chessboard.
  *
  *
  * @a: pointer of two dimension
  *
  * Return: NOT NULL
  */
-
 void print_chessboard(char (*a)[8])
 {
 int i , j;
