@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * char *_memset  that fills memory
+ * char *_memset - Function that fills memory
  * with a constant byte
  *
  * @s: le caractere a verifier
