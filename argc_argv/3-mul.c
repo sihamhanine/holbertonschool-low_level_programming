@@ -9,7 +9,7 @@
  *
  * Return: NOT NULL.
  */
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 int a = 0, b = 0;
 if (argc == 3)
