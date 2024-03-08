@@ -11,12 +11,12 @@
  */
 int main(int argc, char *argv[])
 {
-int a = 0, b = 0;
+int n1 = 0, n2 = 0;
 if (argc == 3)
 {
-a = atoi(argv[1]);
-b = atoi(argv[2]);
-printf("%d\n", a * b);
+n1 = atoi(argv[1]);
+n2 = atoi(argv[2]);
+printf("%d\n", n1 * n2);
 }
 else
 {
