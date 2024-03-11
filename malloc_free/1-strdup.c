@@ -19,18 +19,16 @@ if (str == NULL)
 {
 return (NULL);
 }
-else
-for (i = 0 ; str[i] != '\0' ; i++)
+for (i = 1 ; str[i] != '\0' ; i++)
 {
-p = malloc((i * sizeof(*str)) + 1);
+p = malloc((sizeof(char) * i) + 1);
 if (p == NULL)
 {
 return (NULL);
 }
+else
 for (j = 0 ; j < i ; j++)
-{
 p[j] = str[j];
-}
 }
 p[j] = '\0';
 return (p);
