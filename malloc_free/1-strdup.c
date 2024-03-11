@@ -10,7 +10,6 @@
  *
  * Return: Null if str is NULL else return pointer
  */
-
 char *_strdup(char *str)
 {
 int i = 1, j;
@@ -23,7 +22,7 @@ while (str[i] != '\0')
 {
 i++;
 }
-p = malloc((sizeof(char) * i) + 1);
+p = malloc((sizeof(char) * i)+ 1);
 if (p == NULL)
 {
 return (NULL);
