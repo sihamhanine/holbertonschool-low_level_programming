@@ -20,9 +20,9 @@ if (str == NULL)
 return (NULL);
 }
 else
-for (i = 1 ; str[i] != '\0' ; i++)
+for (i = 0 ; str[i] != '\0' ; i++)
 {
-p = malloc((i * sizeof(char)) + 1);
+p = malloc((i * sizeof(*str)) + 1);
 if (p == NULL)
 {
 return (NULL);
