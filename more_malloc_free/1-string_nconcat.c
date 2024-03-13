@@ -20,11 +20,8 @@ s2 = "";
 while (s1[lent1] != '\0')
 lent1++;
 lent2 = 0;
-if (n >= lent2)
-{
 while (s2[lent2] != '\0')
 lent2++;
-}
 p = malloc(sizeof(char) * (lent1 + n + 1));
 if (p == NULL)
 return (NULL);
