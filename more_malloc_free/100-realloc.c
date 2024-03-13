@@ -5,7 +5,7 @@
  * block using malloc and free
  *
  * @ptr: pointeur vers la memoire deja alloue
- * @old-size: la taille de memoire deja alloue
+ * @old_size: la taille de memoire deja alloue
  * @new_size: la taille de la nouvelle memoire a allouee
  *
  * Return: pointer alloue else return NULL
