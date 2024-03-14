@@ -9,7 +9,7 @@
  * @d: le pointeur qui pointe vers
  * la structure dog
  *
- * imprimer la structure dog
+ * Return: nothing
  */
 void print_dog(struct dog *d)
 {
