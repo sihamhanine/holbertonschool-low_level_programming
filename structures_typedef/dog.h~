@@ -1,0 +1,17 @@
+#ifndef HEADERFILE_H
+#define HEADERFILE_H
+/**
+ * struct dog - with the following elements:
+ *
+ * @name: le premier membre de type char
+ * @age: le deuxieme membre de type float
+ * @owner: le troixieme membre de type char
+ * decrire une structure sous nom de dog
+ */
+struct dog
+{
+char *name;
+float age;
+char *owner;
+};
+#endif
