@@ -6,14 +6,14 @@
  * print_name - Function that prints a name
  *
  * @name: le nom a imprimer
- * @f: le pointeur de la fonction 
+ * @f: le pointeur de la fonction
  *
  * Return: NULL
  */
 void print_name(char *name, void (*f)(char *))
 {
-  if (name != NULL && f != NULL)
-    {
-      f(name);
-    }
+if (name != NULL && f != NULL)
+{
+f(name);
+}
 }
