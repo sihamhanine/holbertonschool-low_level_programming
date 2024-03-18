@@ -15,7 +15,7 @@ if (size > 0)
 {
 if (array != NULL && cmp != NULL)
 {
-for ( i = 0 ; i < size ; i++)
+for (i = 0 ; i < size ; i++)
 {
 if (cmp(array[i]))
 return (i);
