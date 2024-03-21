@@ -38,7 +38,6 @@ void print_all(const char * const format, ...)
 	  if (str == NULL)
 	    printf("(nil)");
 	  printf("%s", str);
-	  etat = 0;
 	  break;
 	default:
 	  etat = 1;
