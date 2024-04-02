@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
 /**
  * print_list - Function that prints all the elements of a list_t list.
  *
@@ -11,7 +12,7 @@
  */
 size_t print_list(const list_t *h)
 {
-int size_t = 0;
+int count = 0;
 while (h != NULL)
 {
 if (h->str == NULL)
@@ -19,7 +20,7 @@ printf("[%u] %s\n", 0, "(nil)");
 else
 printf("[%u] %s\n", h->len, h->str);
 h = h->next;
-size_t++;
+count++;
 }
-return (size_t);
+return (count);
 }

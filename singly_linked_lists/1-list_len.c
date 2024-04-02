@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
 /**
  * list_len - Function that returns the number of elements
  * in a linked list_t list
@@ -12,11 +13,11 @@
  */
 size_t list_len(const list_t *h)
 {
-int size_t = 0;
+int count = 0;
 while (h != NULL)
 {
 h = h->next;
-size_t++;
+count++;
 }
-return (size_t);
+return (count);
 }
