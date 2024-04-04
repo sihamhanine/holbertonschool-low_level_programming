@@ -17,4 +17,3 @@ return (-1);
 *n = *n & (~(1 << index));
 return (1);
 }
-   
