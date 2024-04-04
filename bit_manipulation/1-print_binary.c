@@ -9,23 +9,16 @@
  */
 void print_binary(unsigned long int n)
 {
-unsigned long int mask = 1;
-int i = 0;
-while (mask <= n)
+if (n > 1)
 {
-mask = mask << 1;
-i++;
+print_binary(n >> 1);
 }
-if (i != 0)
+if (n & 1)
 {
-mask = mask >> 1;
+_putchar('1');
 }
-while (mask)
-{
-if (n & mask)
-putchar('1');
 else
-putchar('0');
-mask = mask >> 1;
+{
+_putchar('0');
 }
 }
