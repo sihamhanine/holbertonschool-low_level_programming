@@ -4,6 +4,7 @@
 #include <fcntl.h>
 #include <stddef.h>
 #include <stdlib.h>
+int _strlen(char *s);
 /**
  * create_file - Function  that creates a file.
  * @filename: the name of file to create
