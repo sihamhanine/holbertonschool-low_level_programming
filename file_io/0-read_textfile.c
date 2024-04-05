@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * read_textfile - Function that reads a text file
  * and prints it to the POSIX standard output.
@@ -12,20 +14,18 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-  int fd;
-  ssize_t letters_readed;
-  char *text = malloc(sizeof(char *) * letters);
-  if ((filename == NULL) || (letters == NULL)
-    {
-      return (0);
-    }
-    fd = open(filename, O_RDONLY);
-    if (fd == -1)
-      return (0);
-    letters_readed = read(fd, text, letters);
-    write(STDOUT_FILENO, text, letters_readed);
-    close(fd);
-    return (letters_readed);
-  
+int fd;
+ssize_t letters_readed;
+char *text = malloc(sizeof(char *) * letters);
+if ((filename == NULL) || (letters == 0))
+{
+return (0);
 }
-    
+fd = open(filename, O_RDONLY);
+if (fd == -1)
+return (0);
+letters_readed = read(fd, text, letters);
+write(STDOUT_FILENO, text, letters_readed);
+close(fd);
+return (letters_readed);
+}
