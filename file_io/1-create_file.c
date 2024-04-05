@@ -27,8 +27,10 @@ if (text_content != NULL)
 {
 readed = write(fd, text_content, _strlen(text_content));
 if (readed == -1)
+{
 close(fd);
 return (-1);
+}
 }
 close(fd);
 return (1);
