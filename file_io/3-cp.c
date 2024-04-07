@@ -7,18 +7,6 @@
 #include <errno.h>
 #include <string.h>
 /**
- * error_and_exit - Function that verify
- * condition and get error and exit number
- * @code: the code to exit
- * @meassge: error message
- * Return: no thing
- */
-void error_and_exit(int code, const char *message)
-{
-dprintf(STDERR_FILENO, "%s\n", message);
-exit(code);
-}
-/**
  * main - copy file_from to file_to
  * @argc: number of argument
  * @argv: la chaine d'argument
@@ -32,7 +20,8 @@ ssize_t bytes_readed;
 ssize_t bytes_written;
 if (argc != 3)
 {
-error_and_exit(97, "Usage: cp file_from file_to");
+dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
+exit(97);
 }
 file_from = open(argv[1], O_RDONLY);
 if (file_from == -1)
@@ -50,7 +39,7 @@ while ((bytes_readed = read(file_from, buf, 1024)) > 0)
 {
 if (bytes_readed == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
 bytes_written = write(file_to, buf, bytes_readed);
