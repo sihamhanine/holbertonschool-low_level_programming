@@ -51,7 +51,7 @@ exit(99);
 }
 if (bytes_readed == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
 fd_from = close(file_from);
