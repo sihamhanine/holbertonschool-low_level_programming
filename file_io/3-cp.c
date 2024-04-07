@@ -6,14 +6,11 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
-
-
 /**
  * error_and_exit - Function that verify
  * condition and get error and exit number
  * @code: the code to exit
  * @meassge: error message
- *
  * Return: no thing
  */
 void error_and_exit(int code, const char *message)
@@ -23,11 +20,9 @@ exit(code);
 }
 /**
  * main - copy file_from to file_to
- *
  * @argc: number of argument
  * @argv: la chaine d'argument
- *
- * Return : always 0;
+ * Return: always 0;
  */
 int main(int argc, char **argv)
 {
@@ -53,6 +48,11 @@ exit(99);
 }
 while ((bytes_readed = read(file_from, buf, 1024)) > 0)
 {
+if (bytes_readed == -1)
+{
+dprintf(STDERR_FILENO, "Error: can't read from %s\n", argv[1]);
+exit(98);
+}
 bytes_written = write(file_to, buf, bytes_readed);
 if (bytes_written == -1 || bytes_written != bytes_readed)
 {
@@ -68,5 +68,5 @@ if (close(file_from) == -1 || close(file_to) == -1)
 {
 error_and_exit(100, "Error: Can't close file descriptor");
 }
-return 0;
-} 
+return (0);
+}
