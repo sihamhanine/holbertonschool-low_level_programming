@@ -26,7 +26,7 @@ exit(code);
  */
 int main(int argc, char **argv)
 {
-int file_from, file_to;
+int file_from, file_to, fd_from = 0, fd_to = 0;
 char buf[1024];
 ssize_t bytes_readed;
 ssize_t bytes_written;
@@ -50,7 +50,7 @@ while ((bytes_readed = read(file_from, buf, 1024)) > 0)
 {
 if (bytes_readed == -1)
 {
-dprintf(STDERR_FILENO, "Error: can't read from %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
 exit(98);
 }
 bytes_written = write(file_to, buf, bytes_readed);
@@ -62,11 +62,20 @@ exit(99);
 }
 if (bytes_readed == -1)
 {
-error_and_exit(98, "Error while reading from file");
+dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
+exit(98);
 }
-if (close(file_from) == -1 || close(file_to) == -1)
+fd_from = close(file_from);
+fd_to = close(file_to);
+if (fd_from == -1)
 {
-error_and_exit(100, "Error: Can't close file descriptor");
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+exit(100);
+}
+if (fd_to == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+exit(100);
 }
 return (0);
 }
